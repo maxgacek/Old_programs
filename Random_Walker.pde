@@ -86,10 +86,11 @@ void draw(){
   }
   
   
-		//border
-			if (x<0){
-   	x = 0; 
-   }
+//border
+
+	if (x<0){
+   		x = 0; 
+   	}
   
   if (x>width){
   	x = 640; 

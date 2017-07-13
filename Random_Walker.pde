@@ -1,9 +1,7 @@
 void setup(){
- 
-  background(55);
+   background(55);
   size(1280,720); 
- 
-}
+ }
 
 //position 
 float x = 640;
@@ -20,15 +18,14 @@ float r = 0;
 float g = 0;
 float b = 0;
 float fill = 0;
+
 void draw(){
- 
-  //control
+   //control
   
-  
-  if (mousePressed && (mouseButton == LEFT)) {
-    x = mouseX;
-    y = mouseY;
-  }
+    if (mousePressed && (mouseButton == LEFT)) {
+     x = mouseX;
+     y = mouseY;
+    }
   
   if (keyPressed) {
     if (key == 'w' || key == 'W') {
@@ -88,12 +85,14 @@ void draw(){
    y=y-speed; 
   }
   
-  if (x<0){
-   x = 0; 
-  }
+  
+		//border
+			if (x<0){
+   	x = 0; 
+   }
   
   if (x>width){
-   x = 640; 
+  	x = 640; 
   }
   
   if (y>height){
